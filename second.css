@@ -1,0 +1,215 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .dark-mode-toggle input {
+    display: none;
+  }
+  
+  .dark-mode-toggle .slider {
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dark-mode-toggle .slider:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .dark-mode-toggle input:checked + .slider {
+    background: #0078a5;
+  }
+  
+  .dark-mode-toggle input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(45deg, #1f1c2c, #928dab);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0078a5;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .skill {
+    margin: 20px 0;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #00d9ff;
+    height: 100%;
+    width: 0; /* Animated width */
+    transition: width 1s ease;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #0078a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #005f7a;
+  }
+/* Gallery Section */
+.gallery-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item p {
+    padding: 10px;
+    font-size: 1rem;
+    background: #fff;
+    margin: 0;
+    color: #555;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .lightbox-caption {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+    
