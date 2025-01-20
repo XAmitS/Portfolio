@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Singh | Web Developer</title>
+  <link rel="stylesheet" href="second.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  
+  <div class="dark-mode-toggle">
+    <label for="dark-mode-checkbox">
+      <input type="checkbox" id="dark-mode-checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <div class="hero-section">
+    <div id="dynamic-background"></div>
+    <div class="content">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+      <h1>Hi, I'm <span>Amit Singh</span></h1>
+      <h2><span id="dynamic-text"></span></h2>
+      <a href="#skills" class="cta-button">Explore My Skills</a>
+    </div>
+  </div>
+
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="progress-bar">
+        <div class="progress" data-width="90%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="progress-bar">
+        <div class="progress" data-width="85%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>Python</h3>
+      <div class="progress-bar">
+        <div class="progress" data-width="80%"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required>
+      <input type="email" name="user_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-response"></p>
+  </section>
+  <section id="gallery" class="gallery-section">
+    <h2>My Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/p1 (1).jpg" alt="Project 1">
+        <p> Description</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/p1 (2).jpg" alt="Project 2">
+        <p> Description</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/p1 (3).jpg" alt="Project 3">
+        <p> Description</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/p1 (4).jpg" alt="Project 4">
+        <p> Description</p>
+      </div>
+    </div>
+  </section>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+  
+  <script src="second.js"></script>
+</body>
+</html>
